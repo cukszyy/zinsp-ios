@@ -81,17 +81,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nx6-Ii-yqk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nx6-Ii-yqk">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="screamCell" id="Aev-SY-m9V">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="screamCell" rowHeight="150" id="Aev-SY-m9V" customClass="ScreamTableViewCell" customModule="zinsp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aev-SY-m9V" id="pLp-ke-ZQc">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdX-Xe-SmU">
+                                                    <rect key="frame" x="15" y="8" width="384" height="134"/>
+                                                    <color key="backgroundColor" red="0.92710977157360408" green="0.92710977157360408" blue="0.92710977157360408" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HdX-Xe-SmU" firstAttribute="leading" secondItem="pLp-ke-ZQc" secondAttribute="leading" constant="15" id="7gk-gu-xF7"/>
+                                                <constraint firstAttribute="trailing" secondItem="HdX-Xe-SmU" secondAttribute="trailing" constant="15" id="ApR-cS-Nr0"/>
+                                                <constraint firstAttribute="bottom" secondItem="HdX-Xe-SmU" secondAttribute="bottom" constant="8" id="rgk-op-4Bt"/>
+                                                <constraint firstItem="HdX-Xe-SmU" firstAttribute="top" secondItem="pLp-ke-ZQc" secondAttribute="top" constant="8" id="rw6-kF-Av8"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardBackground" destination="HdX-Xe-SmU" id="2Bp-uD-WzX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
