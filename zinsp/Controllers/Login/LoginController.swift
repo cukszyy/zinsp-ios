@@ -14,7 +14,7 @@ class LoginController: UIViewController {
             self.loginButton.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 60, height: bounds.size.height)
         }) { (success: Bool) in
             if success {
-                self.performSegue(withIdentifier: "showList", sender: nil)
+                self.performSegue(withIdentifier: "showScreams", sender: nil)
             }
         }
     }
