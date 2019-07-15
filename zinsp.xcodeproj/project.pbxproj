@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00233E122DBD53C00227A02 /* ScreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00233E022DBD53C00227A02 /* ScreamsViewController.swift */; };
 		A0335ABF22D7A75000233568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0335ABE22D7A75000233568 /* AppDelegate.swift */; };
 		A0335AC122D7A75000233568 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0335AC022D7A75000233568 /* LoginController.swift */; };
 		A0335AC422D7A75100233568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0335AC222D7A75100233568 /* Main.storyboard */; };
@@ -14,7 +15,7 @@
 		A0335AC922D7A7A000233568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0335AC822D7A7A000233568 /* Assets.xcassets */; };
 		A0335ACC22D7A7A000233568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0335ACA22D7A7A000233568 /* LaunchScreen.storyboard */; };
 		A0335AD722D7A7A200233568 /* zinspTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0335AD622D7A7A200233568 /* zinspTests.swift */; };
-		A0335AE322D82D3400233568 /* ScreamListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0335AE222D82D3400233568 /* ScreamListTableViewController.swift */; };
+		A07408E522DB91DF00D20FF7 /* ScreamNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07408E422DB91DF00D20FF7 /* ScreamNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A00233E022DBD53C00227A02 /* ScreamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamsViewController.swift; sourceTree = "<group>"; };
 		A0335ABB22D7A75000233568 /* zinsp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zinsp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0335ABE22D7A75000233568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0335AC022D7A75000233568 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 		A0335AD222D7A7A200233568 /* zinspTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zinspTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0335AD622D7A7A200233568 /* zinspTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zinspTests.swift; sourceTree = "<group>"; };
 		A0335AD822D7A7A200233568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0335AE222D82D3400233568 /* ScreamListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamListTableViewController.swift; sourceTree = "<group>"; };
+		A07408E422DB91DF00D20FF7 /* ScreamNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A00B270522DBAF6E005DC934 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A00B270622DBAF80005DC934 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A0335AB222D7A74E00233568 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,7 @@
 		A0335ABD22D7A75000233568 /* zinsp */ = {
 			isa = PBXGroup;
 			children = (
+				A00B270522DBAF6E005DC934 /* Views */,
 				A0335AE122D82CC700233568 /* Controllers */,
 				A0335ABE22D7A75000233568 /* AppDelegate.swift */,
 				A0335AC222D7A75100233568 /* Main.storyboard */,
@@ -104,10 +121,28 @@
 		A0335AE122D82CC700233568 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A0335AC022D7A75000233568 /* LoginController.swift */,
-				A0335AE222D82D3400233568 /* ScreamListTableViewController.swift */,
+				A00B270622DBAF80005DC934 /* Profile */,
+				A03E3A1222DB90F2001B30B6 /* Screams */,
+				A0D47B8822DB8EE700008C43 /* Login */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A03E3A1222DB90F2001B30B6 /* Screams */ = {
+			isa = PBXGroup;
+			children = (
+				A07408E422DB91DF00D20FF7 /* ScreamNavBar.swift */,
+				A00233E022DBD53C00227A02 /* ScreamsViewController.swift */,
+			);
+			path = Screams;
+			sourceTree = "<group>";
+		};
+		A0D47B8822DB8EE700008C43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0335AC022D7A75000233568 /* LoginController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0335AE322D82D3400233568 /* ScreamListTableViewController.swift in Sources */,
+				A07408E522DB91DF00D20FF7 /* ScreamNavBar.swift in Sources */,
+				A00233E122DBD53C00227A02 /* ScreamsViewController.swift in Sources */,
 				A0335AC122D7A75000233568 /* LoginController.swift in Sources */,
 				A0335AC722D7A75100233568 /* zinsp.xcdatamodeld in Sources */,
 				A0335ABF22D7A75000233568 /* AppDelegate.swift in Sources */,
