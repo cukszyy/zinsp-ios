@@ -31,6 +31,4 @@ extension ScreamsViewController {
             self.backgroundButton.alpha = 0.8
         }
     }
-    
-    
 }

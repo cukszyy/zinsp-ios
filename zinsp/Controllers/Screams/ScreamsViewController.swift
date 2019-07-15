@@ -47,15 +47,28 @@ extension ScreamsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 40
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "screamCell", for: indexPath)
-        
-        cell.textLabel?.text = "Test label \(indexPath.row)"
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "screamCell", for: indexPath) as! ScreamTableViewCell
+        cell.setupCardView()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150.0
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let transformFromLeft = CATransform3DTranslate(CATransform3DIdentity, 0, 50, 0)
+        cell.layer.transform = transformFromLeft
+        cell.alpha = 0
+        
+        UIView.animate(withDuration: 0.7) {
+            cell.layer.transform = CATransform3DIdentity
+            cell.alpha = 1.0
+        }
     }
     
     func animateTablePresentention() {
