@@ -43,7 +43,7 @@
 		A0335AD222D7A7A200233568 /* zinspTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zinspTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0335AD622D7A7A200233568 /* zinspTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zinspTests.swift; sourceTree = "<group>"; };
 		A0335AD822D7A7A200233568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A06A1EF922DC29C50088C6C9 /* Scream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Scream.swift; path = zinsp/Models/Scream.swift; sourceTree = "<group>"; };
+		A06A1EF922DC29C50088C6C9 /* Scream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scream.swift; sourceTree = "<group>"; };
 		A06A1EFC22DC2C300088C6C9 /* ScreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamTableViewCell.swift; sourceTree = "<group>"; };
 		A07408E422DB91DF00D20FF7 /* ScreamNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +69,7 @@
 		A00233E222DC274800227A02 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A06A1EF922DC29C50088C6C9 /* Scream.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,7 +92,6 @@
 		A0335AB222D7A74E00233568 = {
 			isa = PBXGroup;
 			children = (
-				A06A1EF922DC29C50088C6C9 /* Scream.swift */,
 				A0335ABD22D7A75000233568 /* zinsp */,
 				A0335AD522D7A7A200233568 /* zinspTests */,
 				A0335ABC22D7A75000233568 /* Products */,
